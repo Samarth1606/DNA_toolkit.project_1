@@ -21,6 +21,7 @@ flowchart TD
     E -->|Invalid| G[Display Error & Exit]
     F --> H[Output: Nucleotide Counts, GC Content, Transcription, Translation, Reading Frames]
 
+
 ## Requirements
 
 ### Functional Requirements
