@@ -1,4 +1,4 @@
-# DNA_toolkit.project_1
+# DNA Toolkit Project
 Project based on Bioinformatics showcasing a DNA reading toolkit
 
 ***Validation of DNA sequence:*** validates the DNA sequence if given manually or if through different FASTA formats, so that no other character breaks the code
