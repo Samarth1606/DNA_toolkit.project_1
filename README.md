@@ -8,19 +8,6 @@ Project based on Bioinformatics showcasing a DNA reading toolkit
 ***6 Frame Translation:*** Translates sequences across all 3 forward (+) and 3 reverse (-) reading frames.
 ***Pattern Matching:*** Locates specific codons given and finds their indices
 ***Multiple Formats Supported:*** Multiple FASTA formats are supported in the code(`.fasta`, `.fa`, `.txt`) or we can manually add DNA sequences
-## System Workflow
-
-```mermaid
-flowchart TD
-    A[Start Program] --> B{Choose Input Mode}
-    B -->|1: Manual| C[Prompt for Raw DNA Sequence]
-    B -->|2: FASTA File| D[Read & Parse sample.fasta]
-    C --> E[Validate Sequence]
-    D --> E
-    E -->|Valid| F[Run Toolkit Modules]
-    E -->|Invalid| G[Display Error & Exit]
-    F --> H[Output: Nucleotide Counts, GC Content, Transcription, Translation, Reading Frames]
-
 
 ## Requirements
 
@@ -45,3 +32,18 @@ flowchart TD
 
 ```bash
 python Main.py
+
+## System Workflow
+
+```mermaid
+flowchart TD
+    A[Start Program] --> B{Choose Input Mode}
+    B -->|1: Manual| C[Prompt for Raw DNA Sequence]
+    B -->|2: FASTA File| D[Read & Parse sample.fasta]
+    C --> E[Validate Sequence]
+    D --> E
+    E -->|Valid| F[Run Toolkit Modules]
+    E -->|Invalid| G[Display Error & Exit]
+    F --> H[Output: Nucleotide Counts, GC Content, Transcription, Translation, Reading Frames]
+
+
