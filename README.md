@@ -21,3 +21,26 @@ flowchart TD
     E -->|Invalid| G[Display Error & Exit]
     F --> H[Output: Nucleotide Counts, GC Content, Transcription, Translation, Reading Frames]
 
+## Requirements
+
+### Functional Requirements
+* **FASTA File Parsing:** Ability to read and process raw DNA sequences from standard `.fasta` files.
+* **DNA Validation:** Verifies input sequence validity to filter out non-nucleotide characters.
+* **Sequence Analysis:** Calculates nucleotide counts and GC percentage.
+* **Genetic Operations:** Performs transcription (DNA to RNA), translation to amino acids, reverse complements, and 6-frame translation.
+* **Pattern Matching:** Searches and locates specific codon patterns within sequences.
+
+### Non-Functional Requirements
+* **Performance:** Rapid processing of sequence data with minimal execution delay.
+* **Robustness:** Built-in error handling for invalid sequence characters or missing files.
+* **Modularity:** Separation of core analysis functions (`DNA_Toolkit.py`) from the user interface (`Main.py`).
+
+## How to Run the Tool
+
+1. Clone or download this repository.
+2. Ensure Python 3.x is installed on your system.
+3. Open your terminal or command prompt in the project directory.
+4. Execute the main program:
+
+```bash
+python Main.py
