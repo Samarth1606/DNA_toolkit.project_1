@@ -29,12 +29,11 @@ Project based on Bioinformatics showcasing a DNA reading toolkit
 2. Ensure Python 3.x is installed on your system.
 3. Open your terminal or command prompt in the project directory.
 4. Execute the main program:
-
 ```bash
 python Main.py
+```
 
 ## System Workflow
-
 ```mermaid
 flowchart TD
     A[Start Program] --> B{Choose Input Mode}
